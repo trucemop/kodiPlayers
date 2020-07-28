@@ -1,0 +1,12 @@
+{
+  "name"         : "Twitch",
+  "plugin"       : "plugin.video.twitch",
+  "priority"     : 300,
+  "id"           : "search.twitch",
+  "tvshows"      : [[
+    {
+     "link"      : "plugin://plugin.video.twitch/?content=streams&query={clearname_+}&mode=search_results&index=0",
+     "action"     : "PLAY"
+    }
+   ]]
+ }
