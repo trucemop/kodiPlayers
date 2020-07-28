@@ -1,25 +1,25 @@
 {
- "name"         : "Search [COLOR FF0084FF]-[/COLOR] Netflix",
+ "name"         : "[COLOR red]Netflix[/COLOR]",
  "plugin"       : "plugin.video.netflix",
- "priority"     : 200,
+ "priority"     : 300,
  "id"           : "search.netflix",
  "movies"       : [[
    {
-    "link"      : "plugin://plugin.video.netflix/directory/search/{title_+}/",
+    "link"      : "plugin://plugin.video.netflix/directory/search/search/{title_+}/",
     "steps"     : [ "{title}" ]
    }
   ]],
  "tvshows"      : [[
    {
-    "link"      : "plugin://plugin.video.netflix/directory/search/{clearname_+}/",
+    "link"      : "plugin://plugin.video.netflix/directory/search/search/{clearname_+}/",
     "steps"     : [ "{clearname}", ".* {season}", "{episode}" ]
    },
    {
-    "link"      : "plugin://plugin.video.netflix/directory/search/{clearname_+}/",
+    "link"      : "plugin://plugin.video.netflix/directory/search/search/{clearname_+}/",
     "steps"     : [ "{clearname}", "{episode}" ]
    },
    {
-    "link"      : "plugin://plugin.video.netflix/directory/search/{clearname_+}/",
+    "link"      : "plugin://plugin.video.netflix/directory/search/search/{clearname_+}/",
     "steps"     : [ "{clearname}", "{clearname}", "{episode}" ]
    }
   ]]
